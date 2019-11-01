@@ -3,3 +3,7 @@ spring:
     name: servicio-item
 server:
   port: 8082
+
+servicio-productos:
+  ribbon:
+    listOfServers: localhost:8081, localhost:8083
