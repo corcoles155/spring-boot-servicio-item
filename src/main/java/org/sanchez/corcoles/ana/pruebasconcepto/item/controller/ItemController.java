@@ -21,7 +21,7 @@ public class ItemController {
     }
 
     @GetMapping("/items/{id}/cantidad/{cantidad}")
-    public Item findById(@PathVariable Long id, Integer cantidad) {
+    public Item findById(@PathVariable Long id, @PathVariable Integer cantidad) {
         return itemService.findBy(id, cantidad);
     }
 }
