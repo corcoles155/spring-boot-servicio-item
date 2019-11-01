@@ -12,6 +12,8 @@ public class Producto {
 
     private Date createAt;
 
+    private Integer port;
+
     public Long getId() {
         return id;
     }
@@ -42,5 +44,13 @@ public class Producto {
 
     public void setCreateAt(Date createAt) {
         this.createAt = createAt;
+    }
+
+    public Integer getPort() {
+        return port;
+    }
+
+    public void setPort(Integer port) {
+        this.port = port;
     }
 }
